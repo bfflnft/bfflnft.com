@@ -1,4 +1,6 @@
-
+* {
+  font-family: 'Amatic SC';
+}
 
 .container {
   max-width: 960px;
@@ -20,34 +22,18 @@
   text-decoration: none;
 }
 
-/*
-  * Dummy devices (replace them with your own or something else entirely!)
-  */
-
-.product-device {
+.nft-left {
   position: absolute;
-  right: 10%;
+  right: 5%;
   bottom: 0%;
-  width: 300px;
-  height: 300px;
+  width: 25vw;
+  height: 25vw;
   background-color: #333;
   border-radius: 21px;
-  transform: rotate(20deg);
+  transform: rotate(10deg);
 }
 
-.product-device::before {
-  position: absolute;
-  top: 10%;
-  right: 10px;
-  bottom: 10%;
-  left: 10px;
-  content: "";
-  background-color: rgba(255, 255, 255, .1);
-  border-radius: 5px;
-
-}
-
-.product-device-2 {
+.nft-right {
   top: 0%;
   right: auto;
   bottom: 0;
@@ -55,6 +41,16 @@
   background-color: #e5e5e5;
 }
 
+.nft-left:hover {
+  -webkit-animation:spin 0.2s ease-in;
+  -moz-animation:spin 0.2s ease-in;
+  animation:spin 0.2s ease-in;
+  animation-fill-mode: forwards;
+}
+
+@-moz-keyframes spin { to { -moz-transform: rotate(15deg); }}
+@-webkit-keyframes spin { to { -webkit-transform: rotate(15deg); }}
+@keyframes spin { to { transform: rotate(15deg); }}
 
 /*
   * Extra utilities
