@@ -2,16 +2,22 @@
   font-family: 'Amatic SC';
 }
 
+.lead {
+  font-family: 'Montserrat';
+}
+
 .container {
   max-width: 960px;
 }
 
-/*
-  * Custom translucent site header
-  */
+a:link {
+  text-decoration: none;
+}
 
+/* HEADER */
 .site-header {
   background-color: rgba(35, 35, 35);
+  font-size: 200%;
 }
 .site-header a {
   color: #8e8e8e;
@@ -22,9 +28,24 @@
   text-decoration: none;
 }
 
+/* FOOTER */
+.site-footer {
+  background-color: rgba(35, 35, 35);
+  font-size: 200%;
+}
+.site-footer a {
+  color: #8e8e8e;
+  transition: color .15s ease-in-out;
+}
+.site-footer a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* CARDS */
 .nft-left {
   position: absolute;
-  right: 5%;
+  right: 3%;
   bottom: 0%;
   width: 25vw;
   height: 25vw;
@@ -37,7 +58,7 @@
   top: 0%;
   right: auto;
   bottom: 0;
-  left: 5%;
+  left: 3%;
   background-color: #e5e5e5;
 }
 
@@ -52,10 +73,7 @@
 @-webkit-keyframes spin { to { -webkit-transform: rotate(15deg); }}
 @keyframes spin { to { transform: rotate(15deg); }}
 
-/*
-  * Extra utilities
-  */
-
+/* UTILITIES */
 .flex-equal > * {
   flex: 1;
 }
@@ -85,4 +103,60 @@
 
 .on-top {
   z-index: 10000;
+}
+
+/* SHINE */
+.shine {
+  color: rgba(255,255,255,0.1);
+  
+  background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  
+  -webkit-background-size: 125px 100%;
+  -moz-background-size: 125px 100%;
+  background-size: 125px 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+
+  -webkit-animation: shimmer 2s infinite;
+  -moz-animation: shimmer 2s infinite;
+  animation: shimmer 2s infinite;
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #222;
+}
+@-moz-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@-webkit-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@-o-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
 }
