@@ -18,7 +18,9 @@ window.setInterval(() => {
     let i1 = getRandomInt(nft_urls.length);
     let i2 = getRandomInt(nft_urls.length);
 
-    while(i2 == i1) i2 = getRandomInt(nft_urls.length);
+    while(i2 == i1){
+        i2 = getRandomInt(nft_urls.length);
+    }
 
     nft1.src = nft_urls[i1];
     nft2.src = nft_urls[i2];
