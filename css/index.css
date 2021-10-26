@@ -6,6 +6,10 @@
   font-family: 'Montserrat';
 }
 
+.text-left {
+  text-align: left!important;
+}
+
 .container {
   max-width: 960px;
 }
