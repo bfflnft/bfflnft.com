@@ -10,6 +10,7 @@
     
     <link rel="icon" href="./res/favicon.ico">
     <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js" defer></script>
 
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,15 +45,15 @@
 <main>
   <div class="position-relative p-3 p-md-5 m-md-3 text-center">
     <div class="col-md-6 p-lg-5 mx-auto my-5 on-top">
-      <h2 class="display-4 fw-bold">Bigfoot Fantasy League</h2>
+      <h2 class="display-4 fw-bold">the Bigfoot Fantasy League</h2>
       <p class="lead fw-normal">
         A collection of 5,000 NFTs living on the ETH blockchain providing unique utility, community, and appreciation.
       </p>
       <h1 class="display-6 fw-normal shine">PRESALE Oct-31</h1>
       <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfBExMiMgPMymC0gOUrQFj94RaRjId50I8AwQjEPYwVmozlOQ/viewform?usp=sf_link" style="font-size: 150%">JOIN THE WHITELIST</a>
     </div>
-    <img class="nft-left shadow-sm d-none d-md-block" src="./res/chef.png">
-    <img class="nft-left nft-right shadow-sm d-none d-md-block" src="./res/titan.png"></div>
+    <img id="nft1" class="nft-left shadow-sm d-none d-md-block" src="./res/nft/psycho.png">
+    <img id="nft2" class="nft-left nft-right shadow-sm d-none d-md-block" src="./res/nft/squid.png"></div>
   </div>
 </div>
 
@@ -67,7 +68,7 @@
           So much bigfoot in so little time.
         </p> -->
         <p class="lead">
-          Hodlers will receive kickbacks with airdropped NFTs, BFFL accessories, exclusive access to future drops, and more.
+          Hodlers will receive kickbacks with airdropped NFTs, accessories, exclusive drop access, and more.
         </p>
       </div>
     </div>
@@ -97,13 +98,11 @@
 
   <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
     <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 overflow-hidden">
-      <div class="my-3 p-3 text-center">
-        <h2 id="about" class="display-5">About</h2>
-        <p class="lead">Welcome to the BigFoot Family.</p>
-      </div>
-      <div class="bg-light shadow-sm mx-auto px-4 py-4 text-black" style="font-size: 150%; width: 90%; border-radius: 21px;">
+      <h2 id="about" class="text-center display-5">About</h2>
+      <p class="text-center lead">Welcome to the BigFoot Family.</p>
+      <div class="bg-light shadow-sm mx-auto px-4 py-4 text-black" style="font-size: 150%; border-radius: 21px;">
         <p class="lead">
-          Bigfoot Fantasy League (BFFL) is a collection of 5,000 (plus 100 one-of-one presale) unique Bigfoot NFTs. 
+          Bigfoot Fantasy League (BFFL) is a collection of 5,000 unique Bigfoot NFTs. 
         </p>
         <p class="lead">
           Your Bigfoot doubles as your membership card and grants access to members-only benefits like brand-exclusives, discount codes, and 
@@ -115,29 +114,25 @@
       </div>
     </div>
     <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-white overflow-hidden">
-      <div class="my-3 py-3 text-center">
-        <h2 id="faq" class="display-5">FAQs</h2>
-        <p class="lead">Dont hide your questions, seek the answers.</p>
-      </div>
-      <div class="bg-light box-shadow mx-auto px-4 py-4 text-black" style="width: 90%; border-radius: 21px;">
-        <p class="lead">What is the MINT PRICE?</p>
-        <p class="lead" style="text-align: right;">0.08ETH (0.06ETH PRESALE) + gas fees</p>
-        <p class="lead">IS THERE A PRESALE?</p>
-        <p class="lead" style="text-align: right;">YES! Join the whitelist above and check out our Discord for more info.</p>
-        <p class="lead">HOW MANY BIGFOOTS WILL THERE BE?</p>
+      <h2 id="faq" class="text-center display-5">FAQs</h2>
+      <p class="text-center lead">Don't hide your questions, seek the answers.</p>
+      <div class="bg-light box-shadow mx-auto px-4 py-4 text-black" style="border-radius: 21px;">
+        <p class="lead">▶ WHAT IS THE MINT PRICE?</p>
+        <p class="lead" style="text-align: right;">0.069ETH (nice) + gas fees</p>
+        <p class="lead">▶ IS THERE A PRESALE?</p>
+        <p class="lead" style="text-align: right;">YES! Join the whitelist above.</p>
+        <p class="lead">▶ HOW MANY BIGFOOTS WILL THERE BE?</p>
         <p class="lead" style="text-align: right;">
-          5,000 Bigfoots will be created with an additional 100 1-of-1 PRESALE Bigfoots.
+          5,000 Bigfoots: 100 1-of-1s and 4,900 generated.
         </p>
       </div>
     </div>
   </div>
 
   <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 overflow-hidden">
-      <div class="my-3 p-3 text-center">
-        <h2 id="roadmap" class="display-5">Roadmap</h2>
-      </div>
-      <div class="bg-dark shadow-sm mx-auto px-4 py-4 text-white" style="font-size: 150%; width: 90%; border-radius: 21px;">
+    <div class="me-md-3 py-3 px-3 py-md-5 px-md-5 overflow-hidden">
+      <h2 id="roadmap" class="text-center display-5">Roadmap</h2>
+      <div class="bg-dark shadow-sm mx-auto px-4 py-4 text-white" style="font-size: 175%; width: 90%; border-radius: 21px;">
         <div class="row">
           <div class="col-2">Presale</div>
           <div class="col-10">
@@ -181,26 +176,26 @@
   </div>
 
   <div class="bg-dark d-md-flex flex-md-equal w-100 text-white text-center">
-    <h2 class="display-5">The Team</h2>
-</div>
-  <div class="d-md-flex flex-md-equal flex-wrap mb-0 w-100 ps-md-3 bg-dark">
-    <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+    <h2 class="display-5" style="margin-bottom: 0">The Team</h2>
+  </div>
+  <div class="d-md-flex flex-md-equal flex-wrap mb-0 w-100 ps-md-3 bg-dark text-center">
+    <div class="bg-dark me-md-3 px-3 px-md-5 text-center text-white overflow-hidden">
       <div class="my-3 py-3">
-        <img src="./res/papap.png" style="width: 100%; height: auto;">
+        <img src="./res/nft/papap.png" style="width: 100%; height: auto;">
         <h2 class="display-6">Papa P</h2>
         <p class="lead">Come to papa.</p>
       </div>
     </div>
-    <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+    <div class="bg-dark me-md-3 px-3 px-md-5 text-center text-white overflow-hidden">
         <div class="my-3 py-3">
-          <img src="./res/scooter.png" style="width: 100%; height: auto;">
+          <img src="./res/nft/scooter.png" style="width: 100%; height: auto;">
           <h2 class="display-6">Scooter</h2>
-          <p class="lead">"Jake don't put anything stupid" -Papa P</p>
+          <p class="lead">"Jake don't put anything stupid" -Papa</p>
         </div>
       </div>
-      <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+      <div class="bg-dark me-md-3 px-3 px-md-5 text-center text-white overflow-hidden">
         <div class="my-3 py-3">
-          <img src="./res/bb.png" style="width: 100%; height: auto;">
+          <img src="./res/nft/bb.png" style="width: 100%; height: auto;">
           <h2 class="display-6">BB</h2>
           <p class="lead">
             Take my trash out real quick or live in it
@@ -208,9 +203,9 @@
           </p>
         </div>
       </div>
-      <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+      <div class="bg-dark me-md-3 px-3 px-md-5 text-center text-white overflow-hidden">
         <div class="my-3 py-3">
-          <img src="./res/chef.png" style="width: 100%; height: auto;">
+          <img src="./res/nft/chef.png" style="width: 100%; height: auto;">
           <h2 class="display-6">Josh</h2>
           <p class="lead">I am become death, destroyer of worlds.</p>
         </div>
